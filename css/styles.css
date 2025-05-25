@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+  list-style: none;
+}
+
+.gallery-item {
+  list-style: none;
+  width: 360px;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
+.gallery-image:hover {
+  cursor: pointer;
+}
+
+.modal {
+  width: 1440px;
+
+  background: rgba(46, 47, 66, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
